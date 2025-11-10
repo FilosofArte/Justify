@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale">
+  <title>Subir Evidencia</title>
+  <link rel="stylesheet" type="text/css" href="estilos.css">
+
+</head>
+<body>
+
+  <nav class="nav">
+    <ul class="list">
+
+      <li class="list_item">
+        <div class="list_button">
+          <h1>JUSTIFY</h1>
+        </div>
+        
+      </li>
+
+      <li class="list_item">
+        <div class="list_button">
+          <img src="assets/menu.png" class="list_img">
+          <a href="principal.html" class="nav_link">Inicio</a>
+        </div>
+        
+      </li>
+
+      <li class="list_item list_item--click">
+        <div class="list_button list_button--click">
+          <img src="assets/servicios.png" class="list_img">
+          <a href="#" class="nav_link">Servicios</a>
+          <img src="assets/flecha.png" class="list_arrow">
+        </div>
+
+        <ul class="list_show">
+          <li class="list_inside">
+            <a href="1.html" class="nav_link nav_link--inside">Documentación</a>
+          </li>
+          <li class="list_inside">
+            <a href="2.html" class="nav_link nav_link--inside">Subir Evidencia</a>
+          </li>
+          <li class="list_inside">
+            <a href="3.html" class="nav_link nav_link--inside">Solicitar mediador</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="list_item">
+        <div class="list_button">
+          <img src="assets/archivo.png" class="list_img">
+          <a href="4.html" class="nav_link">Justificante</a>
+        </div>
+        
+      </li>
+
+      <li class="list_item">
+        <div class="list_button">
+          <img src="assets/aceptado.png" class="list_img">
+          <a href="5.html" class="nav_link">Términos y Condiciones</a>
+        </div>
+
+        <li class="list_item">
+        <div class="list_button">
+          <img src="assets/lock.png" class="list_img">
+          <a href="6.html" class="nav_link">Política de privacidad</a>
+        </div>
+        
+      </li>
+        
+      </li>
+
+      <li class="list_item">
+        <div class="list_button">
+          <img src="assets/cerrar.png" class="list_img_A">
+          <a href="index.html" class="nav_link">Cerrar Sesión</a>
+        </div>
+        
+      </li>
+
+    </ul>
+
+
+
+  </nav>
+
+ <div class="main-content">
+  <div class="tarjeta">
+    <h2>SUBIR EVIDENCIA FOTOGRÁFICA</h2>
+    <p>Puedes arrastrar y soltar tu imagen aquí o hacer clic para seleccionarla.</p>
+
+    <div class="zona-subida" id="zonaSubida">
+      <p id="textoZona">📁 Arrastra tu foto aquí o haz clic para seleccionar</p>
+      <input type="file" id="inputArchivo" accept="image/*" hidden>
+      <img id="previewImagen" src="" alt="Vista previa" style="display:none;">
+    </div>
+
+    <div class="tarjeta-contenido">
+      <input type="text" class="input-texto" placeholder="Añade una descripción o comentario...">
+      <div class="botones-linea">
+        <button class="btn azul" id="btnLimpiar">
+          <img src="assets/x.png" alt="icono"> ELIMINAR
+        </button>
+
+        <button class="btn verde" id="btnGuardar">
+          <img src="assets/save.png" alt="icono"> GUARDAR
+        </button>
+      </div>
+    </div>
+
+    <!-- 📢 Aquí se mostrará el mensaje -->
+    <div id="mensajeConfirmacion" class="mensaje-guardado" style="display:none;">
+       Guardado correctamente
+    </div>
+
+  </div>
+
+
+
+  <script type="text/javascript" src="main.js"></script>
+
+</body>
+</html>
